@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Pharmastar</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="../css/bootstrap-toggle.css" rel="stylesheet">
+    
+    <!-- Bootstrap core CSS     -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="../css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="../css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+    
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="../css/demo.css" rel="stylesheet" />
+    
+
+
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="../themify-icons/themify-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+
+    <style type="text/css">
+        label.btn.btn-success.toggle-on{
+            background-color: #049F0C;
+            color: #fff;
+            border-color: #049F0C;
+            opacity: 1;
+        }
+
+        label.btn.btn-danger.toggle-off{
+            background-color: #EE2D20;
+            color: #fff;
+            border-color: #EE2D20;
+            opacity: 1;
+        }
+        span.toggle-handle.btn.btn-default{
+            background-color: #fff;
+            border-color: #fff;
+            border-radius: none;
+            opacity: 1;
+            width: 10px;
+        }
+        div.toggle.btn.btn-success{
+            border-color: #049F0C;
+        }
+        div.toggle.btn.btn-danger{
+            border-color: #EE2D20;
+        }
+    </style>
+    
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-color="green" data-image="../img/bg1.jpg">
+
+        <div class="sidebar-wrapper">
+            <div class="logo">
+                
+                <a href="home.html" class="simple-text" style="font-size: 20px;">
+                <img src="../img/logo1.jpg" style="height: 40px; width: 40px;  margin-right: 5px;">    Pharmastar
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li>
+                    <a href="../html/list.html">
+                        <i class="ti-clipboard"></i>
+                        <p>Lists</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/supplier.html">
+                        <i class="ti-user"></i>
+                        <p>Supplier</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="../html/stocks.html">
+                        <i class="ti-bar-chart"></i>
+                        <p>Stocks</p>
+                    </a>
+                </li>
+				<li>
+                    <a href="../html/report.html">
+                        <i class="ti-pulse"></i>
+                        <p>Reports</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/home.html">
+                        <i class="ti-power-off"></i>
+                        <p>Log-out</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="stocks.html"><i class="ti-bar-chart"></i>Pharmastar Stocks</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">List of Stocks</h4>
+                                <p class="category"></p>
+                            </div>
+                            <div class="content table-responsive table-full-width">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        
+                                        <th>Medicines</th>
+										<th>Code Name</th>
+										<th>Expiry Date</th>
+                                        <th>Quantity</th>
+										<th>Unit</th>
+										<th>Sold</th>
+										<th>Total</th>
+                                        <th>Status</th>
+                                        
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>OXALIPLATIN - OXANISH-50</td>
+											<td>OXIF17A11-A</td>
+											<td>05/2019</td>
+                                            <td>275</td>
+											<td>VIAL</th>
+											<td>100</td>
+											<td>75</td>
+                                            <td><input type="checkbox" checked data-toggle="toggle" data-on="Available" data-off="Not Available" data-onstyle="success" data-offstyle="danger">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>CEFIXIME (TRIHYDRATE) - TRIFIX 200</td>
+											<td>ICFOC7001</td>
+											<td>12/2018</td>
+                                            <td>85,320</td>
+											<td>TABS</td>
+											<td>85,320</td>
+											<td>85,320</td>
+                                            <td><input type="checkbox" data-toggle="toggle" data-on="Available" data-off="Not Available" data-onstyle="success" data-offstyle="danger">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>TAMOXIFEN (CITRATE) 20MG - TAMOXIGEN 20</td>
+                                            <td>GST17018</td>
+											<td>03/2020</td>
+											<td>3,750</td>
+											<td>TABS</td>
+											<td>3,750</td>
+											<td>3,750</td>
+                                            <td><input type="checkbox" data-toggle="toggle" data-on="Available" data-off="Not Available" data-onstyle="success" data-offstyle="danger">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>HYOSCINE BUTYLYBROMIDE - HYOGEN</td>
+                                            <td>I16056</td>
+											<td>05/2018</td>
+											<td>1,720</td>
+											<td>PCS</td>
+											<td>720</td>
+											<td>1,000</td>
+                                            <td><input type="checkbox" checked data-toggle="toggle" data-on="Available" data-off="Not Available" data-onstyle="success" data-offstyle="danger">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+							    <div class="content table-responsive table-full-width">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        
+                                        <th>Diagnostic Brand</th>
+                                        <th>Item Description</th>
+										<th>Pack Size</th>
+										<th>Expiry Date</th>
+										<th>Quantity</th>
+										<th>Sold</th>
+										<th>Total</th>
+                                        <th>Status</th>
+                                        
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>FineCare</td>
+                                            <td>Finecare Troponin I</td>
+											<td>25T/box</td>
+											<td>05/2019</td>
+											<td>18</td>
+											<td>13</td>
+											<td>5</td>
+                                            <td><input type="checkbox" checked data-toggle="toggle" data-on="Available" data-off="Not Available" data-onstyle="success" data-offstyle="danger">
+                                            </td>
+                                        </tr>
+										<tr>
+                                            <td>Nulyte</td>
+                                            <td>Nulyte Electrolyte Analyzer Reagent Pack</td>
+											<td>480mL</td>
+											<td>03/2019</td>
+											<td>24</td>
+											<td>24</td>
+											<td>24</td>
+                                            <td><input type="checkbox" data-toggle="toggle" data-on="Available" data-off="Not Available" data-onstyle="success" data-offstyle="danger">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Snibe</td>
+											<td>FT3</td>
+											<td>100T</td>
+											<td>03/2018</td>
+											<td>3</td>
+											<td>3</td>
+                                            <td>3</td>
+                                            <td><input type="checkbox" data-toggle="toggle" data-on="Available" data-off="Not Available" data-onstyle="success" data-offstyle="danger">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rayto</td>
+                                            <td>Concentrated Cleanser</td>
+											<td>100ml</td>
+											<td>06/2018</td>
+											<td>26</td>
+											<td>26</td>
+											<td>26</td>
+                                            <td><input type="checkbox" data-toggle="toggle" data-on="Available" data-off="Not Available" data-onstyle="success" data-offstyle="danger">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Agappe</td>
+                                            <td>Glucose</td>
+											<td>5X100ml</td>
+											<td>09/2019</td>
+											<td>112</td>
+											<td>4</td>
+											<td>108</td>
+                                            <td><input type="checkbox" checked data-toggle="toggle" data-on="Available" data-off="Not Available" data-onstyle="success" data-offstyle="danger">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+							                            <div class="content table-responsive table-full-width">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        
+                                        <th>Machines</th>
+                                        <th>Serial Number</th>
+										<th>Quantity</th>
+                                        <th>Status</th>
+                                        
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>MERILYZER CLOT DETECTION</td>
+                                            <td>051206</td>
+											<td>1</td>
+                                            <td><input type="checkbox" checked data-toggle="toggle" data-on="Available" data-off="Not Available" data-onstyle="success" data-offstyle="danger">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hematology Analyzer</td>
+                                            <td>891907002IEQXN</td>
+											<td>0</td>
+                                            <td><input type="checkbox" data-toggle="toggle" data-on="Available" data-off="Not Available" data-onstyle="success" data-offstyle="danger">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Microlab Instrument ARX 199i</td>
+											<td>051614</td>
+											<td>0</td>
+                                            <td><input type="checkbox" data-toggle="toggle" data-on="Available" data-off="Not Available" data-onstyle="success" data-offstyle="danger">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>MERILYZER CLINIQUANT</td>
+                                            <td>111660</td>
+											<td>1</td>
+                                            <td><input type="checkbox" checked data-toggle="toggle" data-on="Available" data-off="Not Available" data-onstyle="success" data-offstyle="danger">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;" id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
+        <div style="display: none;" id="chartHours" class="ct-chart"></div>
+        <div style="display: none;" id="chartActivity" class="ct-chart"></div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Supplier
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Stocks
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Monitoring
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               Releasing of Stipend
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    &copy; <script>document.write(new Date().getFullYear())</script> Pharmastar Int'l Trading Corporation
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="../js/jquery.3.2.1.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!--  Charts Plugin -->
+    <script src="../js/chartist.min.js"></script>
+    <script src="../js/chartjs.min.js"></script>
+    <script src="../js/bootstrap-toggle.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="../js/bootstrap-notify.js"></script>
+
+
+    <!--  Google Maps Plugin    -->
+    
+
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+    <script src="../js/light-bootstrap-dashboard.js"></script>
+
+    <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+    <script src="../js/demo.js"></script>
+    
+
+
+</html>

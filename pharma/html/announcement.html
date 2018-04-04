@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Cong. Neptali 'Boyet' Gonzales Scholarship Management System</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="../css/animate.min.css" rel="stylesheet"/>
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="../css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+    
+
+    <!--  CSS for Demo Purpose, don't include it in your project     -->
+    <link href="../css/demo.css" rel="stylesheet" />
+
+
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="../themify-icons/themify-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+    
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="sidebar" data-color="azure" data-image="../img/bg3.jpg">
+
+    <!--
+
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+
+    -->
+
+        <div class="sidebar-wrapper">
+            <div class="logo">
+                
+                <a href="#" class="simple-text" style="font-size: 20px;">
+                <img src="../img/logo.png" style="height: 40px; width: 40px;  margin-right: 5px;">    Coordinator
+                </a>
+            </div>
+
+            <ul class="nav">
+                <li>
+                    <a href="../html/dashboard.html">
+                        <i class="ti-panel"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/scholar.html">
+                        <i class="ti-user"></i>
+                        <p>Scholars</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/agency.html">
+                        <i class="ti-world"></i>
+                        <p>Agency</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" href="#messageFolder" aria-expanded="true">
+                        <i class="ti-email"></i>
+                        <p>Messages
+                            <b class="caret"></b>
+                        </p>
+                    </a>
+                    <div class="collapse" id="messageFolder">
+                        <ul class="nav" style="margin-top: -8px; font-size: 18px;">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/inbox.html">
+                                    <span class="sidebar-mini"><i class="ti-envelope"></i></span>
+                                    <span class="sidebar-normal">Inbox</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/sentbox.html">
+                                    <span class="sidebar-mini"><i class="ti-location-arrow"></i></span>
+                                    <span class="sidebar-normal">Sent Mail</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="../html/announcement.html">
+                        <i class="ti-announcement"></i>
+                        <p>Announcement</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/budget.html">
+                        <i class="" style="font-style: normal;">&#8369;</i>
+                        <p>Budget</p>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/renewal.html">
+                        <i class="ti-reload"></i>
+                        <p>Renewal</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/report.html">
+                        <i class="ti-pulse"></i>
+                        <p>Reports</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../html/home.html">
+                        <i class="ti-power-off"></i>
+                        <p>Log-out</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-panel">
+        <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><i class="ti-announcement"></i> Announcement</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                               <p>&#8369; Budget 1,000,000</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p><i class="ti-server"></i> Slots 3,000</p>
+                            </a>
+                        </li>
+                        <li class="separator hidden-lg"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="header">
+                                <h4 class="title">List of Announcement</h4>
+                                <p class="category">Be updated</p>    
+                                <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#newAnnouncement"><i class="ti-pencil-alt"></i> Compose</button>
+                                <div class="modal fade" id="newAnnouncement" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Create a new announcement
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true" class="ti-close"></span>
+                                        </button>
+                                        </h5>
+                                      </div>
+                                      <div class="modal-body">
+                                        <div class="content">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Subject:</label>
+                                                            <input type="text" class="form-control" placeholder="Subject" value="">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Message</label>
+                                                            <textarea rows="5" class="form-control" placeholder="Write your announcement." value=""></textarea>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <label class="btn btn-primary btn-fill" style="background-color: #616a9a;"><i class="ti-clip"></i> Attachment <input type="file" style="display: none;"> 
+                                                        </label>
+                                                        <br>
+                                                        <label> Max: 30MB </label>
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                        
+                                                <button type="submit" class="btn btn-primary pull-right"><i class="ti-announcement"></i> Post Announcement</button>
+                                                <div class="clearfix"></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="content table-responsive table-full-width">
+                                <table class="table table-hover table-striped">
+                                    <thead>
+                                        <th>Title</th>
+                                        <th>Description</th>
+                                        <th>Date Posted</th>
+                                        <th>Action</th>
+                                    </thead>
+                                    <tbody>
+                                        
+                                    </tbody>
+                                </table>
+                             </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="display: none;" id="chartPreferences" class="ct-chart ct-perfect-fourth"></div>
+        <div style="display: none;" id="chartHours" class="ct-chart"></div>
+        <div style="display: none;" id="chartActivity" class="ct-chart"></div>
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Application
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Budget Planning
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Monitoring
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                               Releasing of Stipend
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    &copy; <script>document.write(new Date().getFullYear())</script> Cong. Neptali 'Boyet' Gonzales Scholarship Management System
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</div>
+
+
+</body>
+
+    <!--   Core JS Files   -->
+    <script src="../js/jquery.3.2.1.min.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!--  Charts Plugin -->
+    <script src="../js/chartist.min.js"></script>
+    <script src="../js/chartjs.min.js"></script>
+
+    <!--  Notifications Plugin    -->
+    <script src="../js/bootstrap-notify.js"></script>
+
+
+    <!--  Google Maps Plugin    -->
+    
+
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+    <script src="../js/light-bootstrap-dashboard.js"></script>
+
+    <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+    <script src="../js/demo.js"></script>
+
+    
+</html>
